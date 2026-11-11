@@ -1,0 +1,245 @@
+body{
+    background-image: url("abcd.avif");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h2{
+    background-color: hsl(34, 78%, 67%);
+    color: black;
+    text-align: center;
+}
+h1 {
+    background-color: rgb(24, 102, 151);
+    color: hwb(46 34% 0%); 
+    text-align: center;
+    border-radius: 25px;
+    margin: 30px auto;
+    padding: 5px 20px;
+    width: 280px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+h1:hover {
+    text-shadow: 
+        2px 2px 0px white,
+        4px 8px rgba (171,0,34,0.35);
+    transform: translateY(-3px);
+
+}
+div.biodata{
+    margin: 30px auto;
+    width: 75%;
+    background-color: rgba(45, 45, 47, 0.833);
+    color: aliceblue;
+    padding: 40px;
+    border-radius: 15px;
+}
+div.content{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid hsl(36, 98%, 68%);
+}
+div.foto img{
+    position: absolute;
+    width : 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+.foto:hover img.bottom{
+    opacity:1 ;
+    transform: scale(1.1); 
+}
+.judul-makanan {
+    transition: 0.3s;
+    cursor:pointer;
+    border-radius: 25px;
+}
+.judul-makanan:hover {
+    color: rgb(24, 33, 196);
+    font-size: 30px;
+    text-shadow: 
+        2px 2px 0px white,
+        4px 8px rgba (171,0,34,0.35);
+    transform: translateY(-3px);
+    border-radius: 25px;
+}
+
+.makanan {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+
+}
+.food-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: none;
+}
+.makanan img {
+    width: 150px;
+    height: 170px;
+    object-fit: cover;
+    cursor :pointer;
+    transition: all 0.4 ease;
+    outline: 3px solid rgb(255, 188, 95);
+}
+.makanan img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 20px rgba(0,0,0,0,3);
+}
+.food-text p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(221, 228, 109);
+    background-color: #3b72c3;
+    border-radius: 15px;
+    padding: 5px 20px;
+    white-space: nowrap;
+}
+
+.memories {
+    transition: 0.3s;
+    cursor:pointer;
+    border-radius: 25px;
+    background-color:hsl(37, 94%, 66%);
+    color: black;
+    text-align: center;
+    font-size: 24px;
+}
+.memories:hover {
+    color: rgb(24, 33, 196);
+    font-size: 30px;
+    text-shadow: 
+        2px 2px 0px white,
+        4px 8px rgba (171,0,34,0.35);
+    transform: translateY(-3px);
+    border-radius: 25px;
+}
+.memori {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: none;
+}
+.memori img {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    cursor :pointer;
+    transition: all 0.4 ease;
+    outline: 2px solid hsl(27, 100%, 78%);
+}
+.memori img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 20px rgba(0,0,0,0,3);
+}
+.text p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: lab(96.06% -10.1 45.15);
+    background-color: #ff73c5;
+    border-radius: 15px;
+    padding: 5px 20px;
+    white-space: nowrap;
+}
+
+.hobi {
+    transition: 0.3s;
+    cursor:pointer;
+    border-radius: 25px;
+    background-color:hsl(36, 86%, 63%);
+    color: black;
+    text-align: center;
+    font-size: 24px;
+}
+.hobi:hover {
+    color: rgb(24, 33, 196);
+    font-size: 30px;
+    text-shadow: 
+        2px 2px 0px white,
+        4px 8px rgba (171,0,34,0.35);
+    transform: translateY(-3px);
+    border-radius: 25px;
+}
+.Hobies {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+.tulisan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: none;
+}
+.Hobies img {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    cursor :pointer;
+    transition: all 0.4 ease;
+    outline: 2px solid hsl(27, 100%, 78%);
+}
+.Hobies img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 20px rgba(0,0,0,0,3);
+}
+.tulisan p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: lab(86.35% -0.99 46.43);
+    background-color: #398544;
+    border-radius: 15px;
+    padding: 5px 20px;
+    white-space: nowrap;
+}
+.the-end {
+    background-color: hsl(48, 95%, 77%);
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+.the-end:hover{
+    transform: scale(1.2);
+    box-shadow: 0 8px 20px rgba(0,0,0,0,3);
+}

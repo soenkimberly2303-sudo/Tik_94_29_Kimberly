@@ -1,0 +1,75 @@
+h5 {
+    color: rgb(88, 64, 18);
+    background-color: rgb(240, 223, 149);
+    text-align: center;
+    font-size: 30px;
+}
+
+
+table, td, th {
+    border: 2px solid black;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fcf199;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: rgb(24, 102, 151);
+}
+
+td {
+    text-align: center;
+
+}
+
+tr:nth-child(2) th {
+    background-color: #293499;
+}
+
+tr:nth-child(3),
+tr:nth-child(5),
+tr:nth-child(7) {
+    background-color: #87cce5;
+}
+
+tr:nth-child(4),
+tr:nth-child(6) {
+    background-color: #87c9f2;
+}
+
+td:nth-child(1):hover,
+th:nth-child(1):hover {
+    background-color: rgb(252, 255, 253);
+    color: rgb(254, 79, 143);
+}
+td:nth-child(2):hover {
+    background-color: rgb(252, 255, 253);
+    color: rgb(254, 79, 143);
+}
+
+tr:nth-child(2) th:nth-child(2):hover {
+   background-color: rgb(252, 255, 253);
+    color: rgb(254, 79, 143);
+}
+
+th:hover, td:hover {
+    background-color: #f094d0;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.blue {
+  background-color: rgba(30, 64, 175, 0.9);
+  color: #facc15;
+}
+.cyan {
+  background-color: rgba(6, 182, 212, 0.9);
+  color: #0f172a;
+}
